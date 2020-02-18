@@ -1,18 +1,25 @@
 <div class="row">
-    <div class="col-md-6-mx-auto-mt-5">
+    <div class="col-md-6 mx-auto mt-5">
         <div class="card">
             <div class="card-body">
-                <h1 class="text-center">Registro</h1>
+                <h3 class="text-center">Ingrese la información</h3>
                 <form>
-                    <div class="form-group">
+                    <div class="formgroup">
+                        <label for="email">Nombre</label>
+                        <input type="name" name="name" id="name" class="form-control">
+                    </div>
+
+                    <div class="formgroup">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-control">
                     </div>
-                    <div class="form-group">
-                        <label for="password">Pasword</label>
-                        <input type="password" name="password" id="password" class="form-control">
+
+                    <div class="formgroup">
+                        <label>Contraseña</label>
+                            <input type="password" name="password" id="password" class="form-control">
                     </div>
-                    <button reuterLink="/menu">Enviar</button>
+                    <br>
+                    <button type="text" value="INGRESAR" class="btn btn-primary btn-block btn-lg" >ENVIAR</button>
                 </form>
             </div>
         </div>

@@ -1,8 +1,20 @@
 <div class="jumbotron">
-    <h1 class="display-3">Bienvenido</h1>
-    <button>Estadisticas</button>
-    <button>Descargar programa adicional</button>
-    <button routerLink="/formulario-penal">Juicio Penal</button>
-    <button routerLink="/formulario-civil">Juicio Civil</button>
-    <button routerLink="/formulario-constitucional">Juicio constitucional</button>
+    <h1 class="display-3" style="text-align: center">Bienvenido</h1>
+    <div class="card border-primary mb-3" style="max-width: 20rem; left: 5rem;">
+      <div class="card-header">Estadisticas de Juicios</div>
+      <div class="card-body">
+        <button type="button" class="btn btn-primary">Estadisticas</button>
+      </div>
+    </div>
+
+    <div class="card border-primary mb-3" style="max-width: 20rem; left: 40rem; bottom: 8.5rem;">
+      <div class="card-header">Formulario de Juicios</div>
+      <div class="card-body">
+        
+    <button type="button" class="btn btn-primary" routerLink="/formulario-penal">Formulario</button>
+      </div>
+    </div>
+  <div style="text-align: center; bottom: 6rem;">
+    <button type="button" class="btn btn-success">Descargar programa adicional</button>
+  </div>
   </div>

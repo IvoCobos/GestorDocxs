@@ -1,14 +1,44 @@
-<button routerLink="/menu">Regresar</button>
-<div style="margin: auto;">
-<label>Numero de juicio</label> <br>
-<input type="text"> <br> <br>
-<label>Fecha inicial</label> <br>
-<input type="date"> <br> <br>
-<label>Fecha de cierre</label> <br>
-<input type="date"> <br> <br>
-<label>Cliente</label> <br>
-<input type="text"><br> <br>
-<label>Fundamentos</label> <br>
-<textarea name="fundamentos" id="" cols="30" rows="10"></textarea>
+<div class="jumbotron">
+    <h4 class="display-5" style="text-align: center">Información del Juicio</h4>
+
+
+    <div style="margin: auto; width: 30rem;">
+    <div class="form-group">
+        <label class="col-form-label" for="inputDefault">Número de Juicio</label>
+        <input type="number" class="form-control" placeholder="Ingrese el número de juicio" id="inputDefault">
+      </div>
+
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault">Fecha Inicial</label>
+        <input type="date" class="form-control" id="FechaInicial">
+      </div>
+
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault">Fecha Cierre</label>
+        <input type="date" class="form-control" id="FechaCierre">
+      </div>
+
+      <div class="form-group">
+        <label class="col-form-label" for="inputDefault">Cliente</label>
+        <input type="text" class="form-control" placeholder="Nombre del cliente" id="inputDefault">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleTextarea">Fundamentos</label>
+        <textarea class="form-control" id="Fundamentos" rows="3"></textarea>
+      </div>
+
+      <div class="form-group">
+        <select class="custom-select">
+          <option selected="">Seleccionar Tipo de Juicio</option>
+          <option value="1">Juicio Penal</option>
+          <option value="2">Juicio Civil</option>
+          <option value="3">Juicio Constitucional</option>
+        </select>
+      </div>
+    <div class="botones">
+        <button routerLink="/menu" type="button" class="btn btn-danger">Regresar</button>
+        <button type="button" class="btn btn-success">Generear PDF</button>
+    </div>
 </div>
-<button>Generear PDF</button>
+  
